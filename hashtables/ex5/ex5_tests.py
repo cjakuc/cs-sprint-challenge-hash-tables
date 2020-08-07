@@ -17,6 +17,7 @@ class TestEx2(unittest.TestCase):
             "baz"
         ]
         result = finder(files, queries)
+        print(result)
         self.assertTrue(result == ['/bin/foo', '/usr/bin/baz'])
 
         queries = [
